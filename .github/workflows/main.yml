@@ -27,9 +27,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install rustup
-        uses: hecrj/setup-rust-action@v1
-        with:
-          rust-version: stable
+        run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
       - name: Deploy to Cloudflare Workers with Wrangler
         uses: cloudflare/wrangler-action@1.2.0
         with:
