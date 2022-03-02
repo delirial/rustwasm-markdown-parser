@@ -29,3 +29,5 @@ jobs:
       
       - name: Deploy to Cloudflare Workers with Wrangler
         uses: cloudflare/wrangler-action@1.2.0
+        with:
+          apiToken: ${{secrets.CF_API_TOKEN}}
