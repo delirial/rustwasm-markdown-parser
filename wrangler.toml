@@ -4,3 +4,4 @@ zone_id = ""
 private = false
 account_id = "4b31dd72d438285e0119f806ba90c81f"
 route = ""
+workers_dev = true
