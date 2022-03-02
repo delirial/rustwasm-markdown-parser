@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install rustup
-        run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+        run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -y
 
       - name: Deploy to Cloudflare Workers with Wrangler
         uses: cloudflare/wrangler-action@1.2.0
